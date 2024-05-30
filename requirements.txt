@@ -1,0 +1,8 @@
+selenium
+ipykernel
+tqdm
+beautifulsoup4
+lxml
+Unidecode
+pandas
+nbstripout
