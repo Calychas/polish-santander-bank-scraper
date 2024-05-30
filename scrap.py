@@ -10,7 +10,7 @@ driver = webdriver.Chrome()
 driver.implicitly_wait(5)
 
 driver.get("https://www.centrum24.pl/centrum24-web/login")
-input("Click here when you're logged in")
+input("\n=========== Click here in the terminal when you're logged in ============\n")
 
 # Historia
 driver.find_element(By.ID, "menu_multichannel_your_finances").click()
@@ -28,6 +28,13 @@ random_sleep()
 driver.find_element(By.XPATH, '//*[@id="history-filter-box"]/div[2]/div/span[2]/div/div/ul/li[7]').click()
 random_sleep()
 
+# Kategorie wydatkow
+driver.find_element(By.XPATH, '//*[@id="history-filter-box"]/div[2]/div/span[3]/div/button').click()
+random_sleep()
+
+# Wszystkie wydatki i pominiete transakcje
+driver.find_element(By.XPATH, '//*[@id="history-filter-box"]/div[2]/div/span[3]/div/div/ul/li[2]').click()
+random_sleep()
 
 # Zapisz strone i kliknij Nastepne
 i = 0
