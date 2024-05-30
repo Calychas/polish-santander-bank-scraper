@@ -2,3 +2,4 @@ venv/
 page_*
 wydatki.csv
 wydatki_kategorie.csv
+debug.log
