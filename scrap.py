@@ -10,7 +10,7 @@ driver = webdriver.Chrome()
 driver.implicitly_wait(5)
 
 driver.get("https://www.centrum24.pl/centrum24-web/login")
-input("Click when you've logged in")
+input("Click here when you're logged in")
 
 # Historia
 driver.find_element(By.ID, "menu_multichannel_your_finances").click()
